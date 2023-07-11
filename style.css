@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Economica&family=Grape+Nuts&family=Roboto:wght@100;300;400;700;900&display=swap");
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+header
+{
+    background-color: #4b4b4b;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.priority-filter
+{
+    display:flex;
+    flex-direction: row;
+    background-color: #3d3d3d;
+    height: 60px;
+    width: 400px;
+    margin-left: 50px;
+    cursor: pointer;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.priority-filter .box {
+    height: 40px;
+    width: 60px;
+    /*margin: 10px;*/
+    box-sizing: border-box;
+}
+
+.priority-filter .box:hover{
+    border: 2px solid white;
+}
+
+.priority-filter .box.p1
+{
+    background-color: pink;
+}
+
+.priority-filter .box.p2
+{
+    background-color: seagreen;
+}
+
+.priority-filter .box.p3
+{
+    background-color: cornflowerblue;
+}
+
+.priority-filter .box.p4
+{
+    background-color: black;
+}
+
+.quick-action
+{
+    display: flex;
+    flex-direction: row;
+    background-color: #3d3d3d;
+    height: 60px;
+    margin-left: 50px;
+}
+
+.quick-action .icon{
+    font-size: 40px;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.quick-action .icon.add{
+    color: white;
+}
+
+.quick-action .icon.delete{
+    color: red;
+}
+
+.quick-action .icon.add:hover{
+   background-color: yellowgreen;
+}
+
+.quick-action .icon.delete:hover{
+    background-color:yellowgreen;
+}
