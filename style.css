@@ -1,13 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Economica&family=Grape+Nuts&family=Roboto:wght@100;300;400;700;900&display=swap");
 
-*
-{
+* {
     margin: 0px;
     padding: 0px;
     font-family: 'Roboto', sans-serif;
 }
-header
-{
+
+header {
     background-color: #4b4b4b;
     height: 80px;
     width: 100%;
@@ -18,16 +17,15 @@ header
     justify-content: center;
 }
 
-.priority-filter
-{
-    display:flex;
+.priority-filter {
+    display: flex;
     flex-direction: row;
     background-color: #3d3d3d;
     height: 60px;
     width: 400px;
     margin-left: 50px;
-    cursor: pointer;
-    justify-content:space-evenly;
+    /*cursor: pointer;*/
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -38,32 +36,31 @@ header
     box-sizing: border-box;
 }
 
-.priority-filter .box:hover{
+.priority-filter .box:hover {
     border: 2px solid white;
 }
 
-.priority-filter .box.p1
-{
+.priority-filter .box.p1 {
     background-color: pink;
+    cursor: pointer;
 }
 
-.priority-filter .box.p2
-{
+.priority-filter .box.p2 {
     background-color: seagreen;
+    cursor: pointer;
 }
 
-.priority-filter .box.p3
-{
+.priority-filter .box.p3 {
     background-color: cornflowerblue;
+    cursor: pointer;
 }
 
-.priority-filter .box.p4
-{
+.priority-filter .box.p4 {
     background-color: black;
+    cursor: pointer;
 }
 
-.quick-action
-{
+.quick-action {
     display: flex;
     flex-direction: row;
     background-color: #3d3d3d;
@@ -71,7 +68,7 @@ header
     margin-left: 50px;
 }
 
-.quick-action .icon{
+.quick-action .icon {
     font-size: 40px;
     padding: 0px 10px;
     display: flex;
@@ -79,18 +76,82 @@ header
     cursor: pointer;
 }
 
-.quick-action .icon.add{
+.quick-action .icon.add {
     color: white;
 }
 
-.quick-action .icon.delete{
+.quick-action .icon.delete {
     color: red;
 }
 
-.quick-action .icon.add:hover{
-   background-color: yellowgreen;
+.quick-action .icon.add:hover {
+    background-color: yellowgreen;
 }
 
-.quick-action .icon.delete:hover{
-    background-color:yellowgreen;
+.quick-action .icon.delete:hover {
+    background-color: yellowgreen;
+}
+
+section h1 {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+.modal {
+    width: 50vh;
+    height: 50vh;
+    background-color: #dfe4da;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    display: flex;
+}
+
+.modal .left-section {
+    width: calc(100% - 80px);
+    display: flex;
+    height: 100%;
+}
+
+.modal .right-section {
+    width: 80px;
+    display: flex;
+    height: 100%;
+    background-color: #4b4b4b;
+}
+
+.modal .left-section textarea {
+    width: 100%;
+    background: transparent;
+    padding: 10px;
+}
+
+.right-section .priority-filter{
+    flex-direction: column;
+    margin-left: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.modal .right-section
+{
+    position: relative;
+}
+
+.right-section .close
+{
+    position: absolute;
+    box-sizing: border-box;
+    cursor: pointer;
+    right:-8px;
+    top: -12px;
+    font-size: 25px;
+    color: red;
+    background-color: yellow;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
 }
